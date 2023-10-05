@@ -1,0 +1,24 @@
+{
+  "name": "web-expert-pe",
+  "version": "1.0.0",
+  "description": "Werkpakket 1 &amp; Werkpakket 2 binnen de web expert PE.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeMaesPXL/web-expert-PE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeMaesPXL/web-expert-PE/issues"
+  },
+  "homepage": "https://github.com/MikeMaesPXL/web-expert-PE#readme",
+  "dependencies": {
+    "sass": "^1.68.0"
+  }
+}
