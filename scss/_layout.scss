@@ -1,0 +1,23 @@
+@use 'base' as *;
+
+.banner {
+    @include flexLayout();
+    margin: 0 15%;
+    border: 1px solid red;
+
+    .header__nav-primary {
+        @include headerFlex();
+
+        ul {
+            @include flexLayout();
+        }
+        li {
+            list-style: none;
+            padding: 0 50px;
+            a {
+                color: $color-black;
+                text-decoration: none;
+            }
+        }
+    }
+}
