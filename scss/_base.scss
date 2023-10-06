@@ -5,33 +5,43 @@ $color-primary: #ed2025;
 $color-secondary: #262626;
 
 //Fonts
-$font-nunito: 'Nunito', sans-serif;
+$font-nunito: 'Nunito Sans', sans-serif;
 
 //General styles
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: $font-nunito;
+    list-style: none;
+    text-decoration: none;
 }
 
-html {
-    scrollbar-width: none;
-}
-
-body {
-    &-webkit-scrollbar {
-        display: none;
-    }
-    background-color: $color-light;
-}
-
-@mixin flexLayout() {
+@mixin flexLayoutSpacedBetween() {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-@mixin headerFlex() {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+@mixin navMenuText($font-size) {
+    color: $color-black;
+    font-size: $font-size;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .4s ease;
+}
+
+@mixin navIcons($font-size) {
+    color: $color-black;
+    font-size: $font-size;
+    margin-right: 20px;
+    font-weight: 400;
+    transition: all .4s ease;
+}
+
+@mixin textColorAndSize($color, $size) {
+    color: $color;
+    font-size: $size;
 }

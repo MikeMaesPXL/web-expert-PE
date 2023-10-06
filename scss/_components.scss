@@ -1,2 +1,52 @@
 @use 'base' as *;
 
+.nav__menu {
+    display: flex;
+    a {
+        @include navMenuText(18px);
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.nav__icon {
+    display: flex;
+    align-items: center;
+    i {
+        @include navIcons(28px);
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-primary;
+        }
+    }
+}
+
+#burger-menu {
+    font-size: 35px;
+    color: $color-black;
+    z-index: 11000;
+    cursor: pointer;
+}
+
+.main__btn {
+    display: inline-block;
+    color: $color-black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid $color-black;
+    padding: 12px 25px;
+    transition: all .4s ease;
+
+    &:hover {
+        background-color: $color-black;
+        color: $color-primary;
+    }
+
+    i {
+        vertical-align: middle;
+    }
+}
