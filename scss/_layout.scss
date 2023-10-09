@@ -23,7 +23,7 @@ header {
     @include basicSectionStyling();
     background-color: rgb(207, 207, 207);
     // background-image: url(/assets/G2\ Jersey\ Banner.jpg);
-    background: linear-gradient(rgba($color-black, .6), transparent, rgba($color-light, 1)), url(/assets/G2-pro-kit-promo.jpg);
+    background: linear-gradient(rgba($color-black, .2), transparent, rgba($color-black, .2)), url(/assets/G2\ Jersey\ Banner.jpg);
     background-position: center;
     background-size: cover;
     // background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
