@@ -64,7 +64,7 @@
     transition: all 0.4s ease;
 
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-10px) rotate(2deg);
     }
 
     .img__card {
@@ -89,24 +89,23 @@
         }
     }
 
-    .add__to__cart,
-    .view__details {
-        background-color: $color-light;
-        color: $color-black;
-        padding: 10px 15px;
-        border-radius: 4px;
-        border: 2px solid $color-black;
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        margin-bottom: 10px;
+    .add__to__cart {
+        @include textColorAndSize($color-light, 12px);
+        @include buttonStyling($color-primary);
 
         &:hover {
-            background-color: $color-primary;
-            color: $color-light;
+            transform: scale(1.1);
+            transition: 0.3s ease;
+        }
+    }
+
+    .view__details {
+        @include textColorAndSize($color-black, 12px);
+        @include buttonStyling($color-light);
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s ease;
         }
     }
 }
