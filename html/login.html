@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G2 Webshop</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Box icons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <ul class="nav__menu">
+            <a href="#" class="logo"><img src="/assets/g2_logo.png" alt="logo"></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">G2 Shop</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About G2</a></li>
+        </ul>
+
+        <div class="nav__icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+            <div class="bx bx-menu" id="burger-menu"></div>
+        </div>
+    </header>
+
+    <section class="login__container forms">
+        <div class="form login">
+            <div class="form__content">
+                <h2>Login</h2>
+
+                <form action="#">
+                    <div class="field input__field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input__field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye__icon'></i>
+                    </div>
+
+                    <div class="form__link">
+                        <a href="#" class="forgot__pass">Forgot password</a>
+                    </div>
+
+                    <div class="field input__field">
+                        <button>Login</button>
+                    </div>
+                </form>
+                <div class="form__link">
+                    <span>New to G2 Esports? <a href="#" class="signup__link">Sign up</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media__options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook__icon' ></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media__options">
+                <a href="#" class="field google">
+                    <img src="/assets/google.png" alt="" class="google__img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer__section">
+        <div class="footer">
+            <footer>
+                <div class="social">
+                    <a href="https://www.instagram.com/g2esports/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/@g2esports"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://twitter.com/G2esports"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.reddit.com/r/G2eSports/?rdt=39025"><i class='bx bxl-reddit'></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="products.html">G2 Shop</a></li>
+                    <li class="list-inline-item"><a href="#">Teams</a></li>
+                    <li class="list-inline-item"><a href="#">News</a></li>
+                    <li class="list-inline-item"><a href="#">About G2</a></li>
+                </ul>
+                <p class="copyright">G2 Esports © 2023</p>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
